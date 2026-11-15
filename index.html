@@ -58,7 +58,10 @@
         "https://vimeo.com/pedrocastanheira",
         "https://www.imdb.com/name/nm3867204/",
         "https://pedrocastanheira.carrd.co/",
-        "https://www.instagram.com/pepi.tus/"
+        "https://www.instagram.com/pepi.tus/",
+        "https://www.linkedin.com/in/pedrocastanheira-dop/",
+        "https://orcid.org/0009-0003-6623-3798",
+        "https://www.cienciavitae.pt/portal/8E15-A9D1-1C70"
       ]
     },
     {
@@ -124,7 +127,8 @@
 
   /* bio */
   .bio{display:grid;grid-template-columns:minmax(0,360px) 1fr;gap:60px;align-items:start}
-  .bio img{width:100%;filter:grayscale(.2)}
+  .bio figure{position:sticky;top:90px;margin:0}
+  .bio img{display:block;width:100%;height:auto;filter:grayscale(.2)}
   .bio p{margin-bottom:18px;max-width:68ch}
   .bio p.lead{font:300 24px/1.45 Fraunces,Georgia,serif}
   details{margin-top:30px;border-top:1px solid var(--line);padding-top:20px}
@@ -147,6 +151,7 @@
   @media (max-width:760px){
     nav ul{gap:16px} nav ul li:nth-child(n+4){display:none}
     .bio{grid-template-columns:1fr;gap:34px}
+    .bio figure{position:static;max-width:420px}
     section{padding:80px 0}
   }
 </style>
@@ -232,7 +237,7 @@
   <div class="wrap">
     <h2><small>About</small>Pedro Castanheira</h2>
     <div class="bio">
-      <img src="https://pedrocastanheira.carrd.co/assets/images/image01.jpg" alt="Pedro Castanheira, cinematographer and director of photography" width="720" height="900" loading="lazy">
+      <figure><img src="https://pedrocastanheira.carrd.co/assets/images/image01.jpg" alt="Pedro Castanheira, cinematographer and director of photography" width="678" height="648" loading="lazy"></figure>
       <div>
         <p class="lead">Pedro Castanheira (Lisbon, 1980) is a Portuguese cinematographer and lighting designer working across cinema, documentary, television, dance and theatre.</p>
         <p>He holds a Master's in Cinematography from ECAM (Madrid) and is a PhD candidate in Artistic Studies – Art and Mediations at NOVA University Lisbon (FCSH). He studied Portuguese and German Philology at NOVA, with an Erasmus year at Humboldt University of Berlin, and attended the Film Course at ESTC and Photography and Art History at Ar.Co in Lisbon.</p>
@@ -268,6 +273,8 @@
           <li>O Trilho dos Pescadores <em>— Lourdes Picareta · SWR · DoP</em></li>
           <li>La Fuga del Alquimista <em>— Javier Mosqueda · DoP</em></li>
           <li>Viejos Perdedores <em>— DoP · Best Cinematography, Alto Vicentino 2010</em></li>
+          <li>Maria Filomena Mónica <em>— Sofia Pinto Coelho · documentary · DoP (in production)</em></li>
+          <li>Refugiados en el Líbano. La otra cara de Palestina <em>— Fundipax · DoP</em></li>
           <li>Jenín – Gilboa. A New Hope for Peace <em>— Jacobo Echevarría · DoP</em></li>
           <li>Vai e Vem <em>— João César Monteiro · crew</em></li>
         </ul>
@@ -277,11 +284,15 @@
         <ul>
           <li>Despojos de Guerra <em>— SIC · DoP</em></li>
           <li>Hijos de las Estrellas <em>— Cabala Producciones · DoP</em></li>
-          <li>TVE <em>— camera operator</em></li>
+          <li>Código Rosa <em>— Black Films (Chile) · DoP</em></li>
+          <li>Aula de Castigo <em>— Zampanò Producciones (Spain) · DoP</em></li>
+          <li>TVE · TVE2 · Telemadrid <em>— camera operator</em></li>
         </ul>
         <h3 style="margin-top:40px">Dance &amp; theatre</h3>
         <ul>
           <li>Memorial do Convento · Quartetos · Prelúdios de Dança · O Quebra-Nozes · Requiem <em>— DdD Danças em Diálogo</em></li>
+          <li>Acontece Camões <em>— dir. Paulo Filipe Monteiro · lighting design, 2026</em></li>
+          <li>Dicionário de Luz <em>— audiovisual installation, Teatro Municipal de Almada, 2026</em></li>
           <li>Benfazeja <em>— Teatro O Bando · lighting &amp; projection</em></li>
           <li>Teatro Aleph · Teatro Camino · Lollapalooza Chile <em>— lighting design</em></li>
         </ul>
@@ -313,7 +324,9 @@
       <a href="https://vimeo.com/pedrocastanheira" rel="me noopener">Vimeo</a>
       <a href="https://www.imdb.com/name/nm3867204/" rel="me noopener">IMDb</a>
       <a href="https://www.instagram.com/pepi.tus/" rel="me noopener">Instagram</a>
-      <!-- <a href="https://linkedin.com/in/TEU_USER" rel="me noopener">LinkedIn</a> -->
+      <a href="https://www.linkedin.com/in/pedrocastanheira-dop/" rel="me noopener">LinkedIn</a>
+      <a href="https://www.cienciavitae.pt/portal/8E15-A9D1-1C70" rel="me noopener">Ciência Vitae</a>
+      <a href="https://orcid.org/0009-0003-6623-3798" rel="me noopener">ORCID</a>
     </div>
   </div>
 </section>
