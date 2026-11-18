@@ -211,10 +211,45 @@
     <h1>Dicionário Vivo de Luz</h1>
     <p class="role">Pensar com a Luz <span>·</span> Exercícios para Habitar o Umbral</p>
     <p class="sub">Dispositivo participativo de investigação artística · 24 horas, de quinta 19 a sexta 20 de novembro de 2026 · conferência Counter-Image, Campus da Penha, Faro — e em qualquer lugar</p>
-    <p style="margin-top:22px"><a href="#participar" class="badge" style="text-decoration:none;font-size:15px;padding:8px 16px">Como participar · How to take part ↓</a></p>
+    <p style="margin-top:22px"><a href="#participar" class="badge" style="text-decoration:none;font-size:15px;padding:8px 16px">Como participar · How to take part ↓</a> &nbsp; <a href="#inscricao" class="badge" style="text-decoration:none;font-size:15px;padding:8px 16px">Inscrição · Sign up ↓</a></p>
   </div>
 </header>
-<section id="participar" style="padding-top:60px">
+<section id="encontrar" style="padding-top:60px">
+  <div class="wrap">
+    <h2><small>10 a 15 minutos · 10–15 minutes</small>O que vais encontrar</h2>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+      <article class="work" style="border-top:1px solid var(--accent);padding-top:18px">
+        <h3 style="margin-top:0">1 · Incidência e perceção</h3>
+        <p>Um feixe de luz invisível que só aparece quando o polegar o atravessa. Uma semente vista à lupa.</p>
+        <p class="dim" lang="en" style="color:var(--dim)">An invisible beam that only appears on your thumb. A seed under a magnifying glass.</p>
+      </article>
+      <article class="work" style="border-top:1px solid var(--accent);padding-top:18px">
+        <h3 style="margin-top:0">2 · Retrato</h3>
+        <p>Uma cara de barro, um espelho de aumento que gira e o teu rosto. Como Narciso, primeiro vês outra cara, depois a tua.</p>
+        <p class="dim" lang="en" style="color:var(--dim)">A clay face, a turning magnifying mirror, your own face. Like Narcissus, first you see another face, then yours.</p>
+      </article>
+      <article class="work" style="border-top:1px solid var(--accent);padding-top:18px">
+        <h3 style="margin-top:0">3 · Escrita</h3>
+        <p>Uma palavra e uma frase. Cada visitante acrescenta uma entrada ao dicionário.</p>
+        <p class="dim" lang="en" style="color:var(--dim)">One word and one sentence. Every visitor adds an entry to the dictionary.</p>
+      </article>
+    </div>
+    <div id="inscricao" style="margin-top:56px;max-width:640px">
+      <h3 style="font:500 12px Inter;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:16px">Inscrição · Sign up</h3>
+      <form id="pc-inscricao" style="display:grid;gap:14px">
+        <label style="font-size:15px">Nome <span style="color:var(--dim)">(opcional · optional)</span><br><input name="nome" style="width:100%;margin-top:6px;padding:10px;background:#1a1816;border:1px solid var(--line);color:var(--fg);font:inherit"></label>
+        <label style="font-size:15px">Quando gostarias de vir? <span style="color:var(--dim)">· When?</span><br><input name="quando" placeholder="ex.: quinta, 15h · Thursday, 3 pm" style="width:100%;margin-top:6px;padding:10px;background:#1a1816;border:1px solid var(--line);color:var(--fg);font:inherit"></label>
+        <label style="font-size:15px">Que palavra gostarias de procurar neste dicionário? <span style="color:var(--dim)">· Which word would you like to look up?</span><br><input name="palavra" placeholder="sombra, pele, brilho, olhar…" style="width:100%;margin-top:6px;padding:10px;background:#1a1816;border:1px solid var(--line);color:var(--fg);font:inherit"></label>
+        <button type="submit" class="badge" style="justify-self:start;font-size:15px;padding:8px 18px;background:none;cursor:pointer">Inscrever-me · Sign up →</button>
+        <p class="dim" style="font-size:13px;color:var(--dim)">Abre o teu email com a inscrição pronta a enviar para castanheira.cine@gmail.com. · Opens your email app with the sign-up ready to send.</p>
+      </form>
+    </div>
+  </div>
+</section>
+<script>
+document.getElementById('pc-inscricao').addEventListener('submit',function(e){e.preventDefault();var f=e.target;var b='Inscrição — Dicionário Vivo de Luz\n\nNome: '+(f.nome.value||'—')+'\nQuando: '+(f.quando.value||'—')+'\nPalavra a procurar: '+(f.palavra.value||'—')+'\n';location.href='mailto:castanheira.cine@gmail.com?subject='+encodeURIComponent('Inscrição — Dicionário Vivo de Luz')+'&body='+encodeURIComponent(b);});
+</script>
+<section id="participar">
   <div class="wrap">
     <h2><small>24 horas · quinta 19 → sexta 20 nov</small>Como participar</h2>
     <div class="stage-intro">
